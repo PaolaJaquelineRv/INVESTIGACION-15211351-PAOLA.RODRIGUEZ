@@ -1,0 +1,551 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Tecnología e Innovación en el Sector Repostero
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={jaqueline.rodriguez.133@gmail.com}   % email address
+]{\inits{PR}\fnm{Paola Jaqueline} \snm{Rodríguez Velázquez}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Instituto Tecnológico de Tijuana, Ing. en Sistemas Computacionales}, % university, etc
+  \street{},                     %
+  %\postcode{}                                % post or zip code
+  \city{Tijuana},                              % city
+  \cny{B.C}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{},
+  \street{},
+  \postcode{}
+  \city{},
+  \cny{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\abstractname}{Resumen}\begin{abstractbox}
+
+\begin{abstract} % abstract
+\begin{flushleft}
+
+La repostería está considerada como un arte delicado por la inmensa variedad que se usa en su confección, esta ha evolucionado desde sus inicios en el del siglo XVIII, en Egipto existían recetas simples de repostería pero no se conocía el azúcar, por lo que el sabor dulce se conseguía gracias a la miel de abeja, hasta los más grandes descubrimientos como lo es la impresión 3d de dulces.
+\newline
+\newline
+La innovación es el elemento clave que explica la competitividad, la empresa consigue ventaja competitiva mediante innovaciones.
+\newline
+\newline
+La repostería puede considerarse un arte y a la vez un negocio. Es por eso que implementa diferentes herramientas para su crecimiento en el ámbito empresarial.
+\newline
+\newline
+Los avances tecnológicos los vemos a diario en nuestro entorno con productos que nos permitan tener una vida práctica y hacer las cosas más rápido; en el caso de la repostería vemos cómo cambian los productos respecto a los que antes teníamos, que nos obligaba a ser manuales y a demorarnos más en las preparaciones. La maquinaria que se usaba era de tipo artesanal y era mayor el número de empleados en las empresas, pero ahora existen todo tipo de maquinaria que permite minimizar costos, agilizar productos y presentarlos de iguales proporciones y sabores.
+Han sido y son como en toda la industria muy importantes: la batidora, la montadora de natas, los hornos y muchos utensilios más, que hacen de la elaboración de postres el negocio rentable y dulce. Lo último en incorporarse en la industria pastelera es la informática.
+\newline
+\newline
+La innovación de un producto antecede a las innovaciones de proceso, que tienden a bajar los costos de producción, en el camino hacia la estandarización se introduce nueva maquinaria para la producción a gran escala, un ejemplo son los hornos rotativos pensados para mejorar la elaboración de galletas entre otros productos.
+\newline
+\newline
+El contar con un buen software de gestión es un plus en la empresa repostera ya que permitirá el intercambio de información en línea, eficacia en inventarios entre más características.
+\newline
+\newline
+Una estrategia básica, es el disponer de una página web bien posicionada en la cual sea posible encontrar información sobre el producto, disponer de una tienda virtual y llevar a cabo campañas de marketing online. También es necesario que sea fácilmente administrable y que permita realizar pedidos fácil y rápidamente.
+
+\end{flushleft}
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{Innovación}
+\kwd{Tecnología}
+\kwd{Repostería}
+\kwd{Software}
+\kwd{Virtual}
+\kwd{Gestión}
+\kwd{Estrategias}
+\kwd{Marketing}
+\kwd{Creatividad}
+\kwd{Empresas}
+\kwd{Impresion3d}
+\kwd{plataformas}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+\newpage
+
+\section*{Índice}
+\tableofcontents
+
+ %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+\newpage
+\section{Introducción}
+El presente trabajo de investigación pretende, como su nombre lo dice el abarcar las tecnologías e innovaciones en el sector de la repostería y demostrar el cómo la tecnología ha impulsado los grandes negocios, para lo cual se ha estructurado en subtemas a fin de obtener un panorama más amplio sobre el tema a tratar.
+
+De inicio se aborda de manera general los antecedentes de las contribuciones a la repostería.
+
+Al abordar el tema de innovaciones tecnológicas resulta necesario analizar el concepto de Innovación mediante la perspectiva de diferentes autores y también  el cómo ésta interviene en el éxito y en la supervivencia de la empresa.
+
+Posteriormente se dará entrada a los temas referentes al enfoque:  la creatividad como una herramienta de innovación, nuevos productos, estrategias tecnológicas, marketing, tienda virtual.
+
+Se presentará lo mas nuevo en producción, diseño, estrategias de venta, es decir, innovaciones tecnológicas actuales.
+
+Para finalizar el presente trabajo se mencionan los objetivos que persigue la creación de una empresa virtual. 
+
+
+\section{Justificación }
+El motivo que me llevó a elegir este tema para la elaboración de mi investigación es el interés que tengo hacia el sector repostero, la tecnología y el ámbito empresarial.
+
+Durante las últimas dos décadas hemos experimentado más cambios en las empresas debidos a la tecnología que a ningún otro factor. 
+Las empresas que no sean capaces de mantener el ritmo de los cambios tecnológicos podrían desaparecer en muy pocos años, considero que en el sector de la repostería se han ido incorporando variedad de innovaciones tecnológicas las cuales son importante mencionar, en este sector es muy importante la base de conocimiento tanto para la elaboración de los productos, para mostrar el trabajo a los posibles clientes, para la obtención de nuevos clientes potenciales, como para tener un soporte sólido en el que basar el trabajo diario. También se requiere una buena planificación interna, una buena gestión de proveedores, stock de ingredientes y herramientas, marketing, etc.
+
+Decidí enfocarme en algo que a mi me llama la atención, la repostería, considero que esta, a lo largo de la historia ha ido evolucionando introduciendo nuevas herramientas las cuales la han llevado al éxito alrededor del mundo, y en diferentes aspectos como lo son los artefactos para mejorar la calidad de los productos, para su conservación, nuevos procesos de producción, técnicas de decoración, venta, publicidad, entre otras cosas, todo esto será analizado y conoceremos cuales son los beneficios que ha traído el uso de la tecnología en este ámbito.
+
+
+Es por eso que me intereso mucho este tema ya que intervienen distintos ámbitos, los cuales contribuyen al éxito de una empresa .
+
+
+\section{Objetivos Generales}
+	\begin{itemize}
+\item Conocer las innovaciones tecnológicas lanzadas al mercado.
+\item Analizar el concepto desde distintas perspectivas como Sherman Gee, entre otros.
+\item Desarrollar una investigación completa y de calidad.
+
+	\end{itemize}
+		
+\section{Objetivos específicos}
+\begin{itemize}
+\item Conocer algunas estrategias tecnológicas por si en algun futuro llegara a crear mi propia empresa repostera.
+\item Actualizarme con lo nuevo respecto a la repostería y tecnología.
+\item Hacer un análisis de lo que era la repostería convencional a lo que es actualmente.
+
+	\end{itemize}
+
+\newpage
+
+\section{La reposteria en sus inicios}
+Antiguamente la palabra repostería significaba "despensa", era el lugar designado para el almacenamiento de las provisiones y en donde se elaboraban los dulces, pastas, fiambres y embutidos.
+
+Desde los inicios del siglo XVIII, la palabra repostería se refería al arte de confeccionar pasteles, postres, dulces, turrones, dulces secos, helados y bebidas licorosas.
+
+
+Postre: Plato dulce que se toma al final de la comida; cuando se habla de postres se entiende alguna preparación dulce, bien sean cremas, tartas, pasteles, helados, bombones.
+
+La repostería está considerada como un arte delicado por la inmensa variedad que se usa en su confección y por las diferentes presentaciones que puede tener un postre o pastel.
+
+Dentro de la repostería el elemento principal es el azúcar; y otros en gran escala como, frutas, chocolate, caramelo, harina, mantequilla, escencias, etc.
+
+Ya en Egipto existían recetas simples de repostería. Aún no se conocía el azúcar, por lo que el sabor dulce se conseguía gracias a la miel de abeja.
+En la Roma antigua se empezaron a emplear nuevas técnicas y medios para dulcificar, como el mulsum (un vino meloso) y mezclaban la harina con miel para elaborar pasteles. Numerosos autores mencionan postres como la tripartina, a base de huevos, leche y miel, o el globus¸una especie de buñuelo. Sin embargo, en el lejano Oriente se conocía la caña de azúcar. 
+
+En el siglo XVII se descubre la levadura biológica, lo que permite que se desarrolle mucho más la pastelería y se diferencie aún más de la panadería, ya que surgen bollos nuevos, tales como los brioches y otros similares.
+En Francia, durante este siglo, el XVIII, se inicia el desarrollo del hojaldre, lo que inicia la pastelería moderna. También se desarrolla con fuerza la pastelería en Austria, que la reina María Antonieta llevará a Francia cuando se case con Luis XVI. Ya entonces se hacían pasteles creativos que podrían parecernos obras de arte. 
+
+El siglo XIX supone un gran auge para el mundo de la repostería, pues empiezan a aparecer pastelerías y confiterías abiertas al público. Se mejoran los equipos y maquinarias y surgen otras nuevas, como las primeras máquinas de hacer hielo, lo que permitió la producción en masa, gracias a su poder conservante.
+
+Con el siglo XX llegan más avances tecnológicos que permiten la conservación, la fermentación, la congelación... que no hacen sino aumentar la calidad de los productos.
+
+\section{Innovación desde diferentes perspectivas}
+
+Los productos pueden tener éxito internacionalmente por su precio, por su calidad, por su diseño, creatividad, o sencillamente, porque dispone de una red comercial más amplia o se ha hecho de mas publicidad. Pero, ¿Cómo han sido posibles estos productos competitivos?, Cómo se han generado? La respuesta es: a través de innovaciones.
+
+Innovación es sinónimo de cambio. La empresa innovadora es la que cambia, evoluciona, se actualiza, hace cosas nuevas, ofrece mayores beneficios, nuevos productos y adopta, o pone a punto, nuevos procesos de fabricación. “Innovación es atreverse” e “Innovación es nacer cada día” son dos buenos lemas. Hoy, la empresa está obligada a ser innovadora para mantenerse en el mercado, y si es que quiere sobrevivir. Si no innova, pronto será alcanzada por la competencia.
+
+“La innovación es el proceso en el cual a partir de una idea, invención o reconocimiento de una necesidad se desarrolla un producto, técnica o servicio útil hasta que sea comercialmente aceptado”. Sherman Gee (1)
+
+“Conjunto de actividades, inscritas en un determinado período de tiempo y lugar, que conducen a la introducción con éxito en el mercado, por primera vez, de una idea en forma de nuevos o mejores productos, servicios o técnicas de gestión y organización”. Pavón y Goodman (1)
+
+El esfuerzo que se está haciendo por encontrar nuevas tecnologías o mejorar las existentes es inmenso. ¿Quien se acuerda de los primeros hornos de pan? ¿Y lo difícil que era la conservación de los productos de repostería? ¿La básica decoración de los pasteles durante la aparición de la pastelería? 
+
+\section{Los continuos cambios de la tecnología}
+\subsection{Herramientas para la Innovación: la creatividad}
+
+La obtención de ideas de calidad se convierte entonces en un tema de más importancia. Se necesitan buenas ideas para generar nuevos productos, para resolver problemas, para tomar decisiones acertadas... Las ideas pueden tener diferentes procedencias como el comentario de un cliente, la visión de un producto de la competencia o la información que proporciona la moderna vigilancia tecnológica. Pero ahora nos referimos sobre todo a las ideas originales que no proceden del exterior sino que se generan en el interior de la mente humana. La creatividad se puede definir precisamente como “el proceso mental que ayuda a generar ideas” (Majaro, 1992). Para Hubert Jaoui la creatividad es “la actitud para crear”, y también “un conjunto de técnicas y metodologías susceptibles de estimular y de incrementar nuestra innata capacidad de crear, desarrollándola y canalizándola”.
+
+Otras definiciones van en la misma línea: “Crear es buscar nuevas soluciones a viejos problemas mediante métodos no lógicos” (Carlos Barceló).
+
+Las empresas excelentes han aprendido a seleccionar y aprovechar las ideas creativas tanto externas como internas y a gestionar la innovación de manera sistemática. Cabe remarcar, no obstante, que a la creatividad no siempre le sigue automáticamente la innovación; las ideas son solamente las materias primas para la innovación, pero no la produce inevitablemente. De una forma parecida, es posible que una empresa sea innovadora a pesar de un bajo nivel de creatividad interna. En este caso la empresa innova a partir de ideas procedentes de fuentes exteriores. 
+
+Dirigiéndome hacia el enfoque que estoy desarrollando, la repostería, una de las innovaciones que fue presentada en Estados Unidos es algo que realmente me dejo muy sorprendida respecto a la gran evolución que ha tenido la repostería convencional, la primera impresora 3D diseñada especialmente para la impresión de figuras de chocolate, caramelos y todo tipo de adornos comestibles.
+
+
+
+El responsable de presentar el primer prototipo de la máquina llamada Chef Jet, que incluso ya cuenta con una versión más sofisticada llamada Chef Jet Pro, fue Efe Von Hasseln quien explicó: “Utilizamos este prototipo en Sugar Lab, una pastelería de Los Ángeles donde hacemos todo tipo de confites divertidos, incluidos chocolates y caramelos”, explicó el arquitecto, quien cursó también estudios de biología. (2)
+
+El proceso de impresión comienza creando en el ordenador un modelo tridimensional de aquello que queremos imprimir, como si de un archivo más se tratara. Luego, el programa, divide en capas el objeto que sirven de patrones para la impresora. La máquina distribuye una fina capa de azúcar en cada capa que se rocía con agua.
+
+
+Funciona como cuando se le añade agua al azúcar y se deja en un recipiente toda la noche. Lo que se obtiene como resultado es una roca dura llamada azúcar cristalizada.
+
+
+La iniciativa ha generado interés. La empresa de Von Hasseln firmó recientemente un acuerdo con el fabricante de chocolates Hershey para explorar oportunidades innovadoras para el uso de la tecnología 3D .
+
+Este es un claro ejemplo de que la innovación, sea en cualquier sector, va en crecimiento y solo basta con que las empresas aprovechen las ideas creativas sin importar que no sean desarrolladas internamente ya que es posible adoptar las innovaciones externas como es el caso del prototipo Chef Jet .
+
+\section{Nuevos productos: Maquinaria de repostería}
+
+David Mills, Vicepresidente Ejecutivo de Operaciones de Ricoh Europa, ha afirmado: "Las empresas de éxito en 2020 serán las que pongan un mayor énfasis en la innovación de procesos. (13)
+
+Existe una frase que dice, “Solo se puede descubrir lo que ya existe, en cambio solo se puede inventar lo que no existe, como, por ejemplo, una máquina nueva”. La ciencia se descubre, las máquinas se inventan. Toda invención ha de consistir en el planteamiento de un problema y en la resolución de este problema.
+
+Abernathy considera que el progreso tecnológico en un sector está generado por el paso de una innovación radical a un estado generalizado de innovaciones incrementadas. Sucesivamente se pasa de una situación inicial caracterizada por la presencia de mano de obra altamente calificada, maquinaria de tipo general y preocupación por los resultados del producto o proceso a otro donde los rasgos dominantes son la producción en masa, la intensidad en capital, una mano de obra menos calificada y, en general, la reducción de costos.
+
+
+
+Esta figura indica que una innovación de producto va seguida, en general, por innovaciones de proceso, que tienden a bajar los costos de producción, en el camino hacia la estandarización.
+
+Las empresas usuarias de tecnologías son aquellas que absorben la tecnología que les proporcionan los proveedores de maquinaria.
+
+En la actualidad lo que se busca es aumentar la producción para disminuir los gastos y por tanto, la mano de obra. Es por eso que se está implementando el uso de maquinaria para la automatización en la creación de los productos de repostería
+
+Una empresa necesita tener liderazgo en costos, a través de mayor producción, venta y margen, con una consecuente mayor utilidad. (5)
+
+Es por esto que las siguientes tecnologías podrían ayudar en gran medida para que la empresa pudiera producir más y por ende responder de mejor forma al mercado.
+
+La maquinaria de pastelería de COMAS, casa fundada en 1972, está especializada en la producción de máquinas dosificadoras, especialmente pensadas para el sector del dulce y en la que es posible encontrar múltiples soluciones y opciones en función del producto final a realizar ya sea bollería, pastelitos, galletas o pasteles de capas. (4)
+
+
+Dejando a un lado los hornos rotativos se crearon hornos de gas directo y un nuevo segmento de mercado.
+
+Se trata de maquinaria de repostería pensada para ofrecer a nuestros clientes soluciones rápidas y de calidad con profesionales líderes en su sector. 
+
+En función del tipo de producto a desarrollar, la maquinaria para pastelería, será una u otra, pero siempre pensada para producir el mayor número de unidades con las garantías de calidad y exigencia requeridas por los consumidores.
+
+\section{Estrategias tecnológicas}
+La competencia es cada vez más intensa y cada vez se basa más en la rápida utilización de la tecnología.
+
+“La estrategia tecnológica debe encajar dentro de la estrategia global de la empresa”(Escorsa y Valls, 1992).
+
+Según el concepto de Tecnología esencial, las empresas deberían explorar y explotar todas las aplicaciones posibles de estas tecnologías esenciales, Incluso si esto significa penetrar en mercados muy distintos. 
+
+\subsection{Software de gestión}
+
+
+La gestión de la tecnología es necesaria, tanto en las empresas usuarias de tecnología como en las generadoras de tecnología, y tanto en las pequeñas como en las grandes. 
+
+La gestión de la tecnología se ocupa tanto de las tecnologías de producto/proceso como de las que realizan funciones auxiliares. Después de la revolución de las tecnologías de la información y las comunicaciones la ventaja competitiva no depende solamente del dominio de las tecnologías esenciales sino también del uso correcto de las tecnologías de la información en apoyo de funciones tales como la gestión informática de la empresa repostera.( (1) p.41)
+
+Lo último en incorporarse a la industria repostera es la informática, la importancia de esta como herramienta competitiva en la industria es contundente, ya que permite reducir costos, aumentar la productividad, incrementar la calidad y la eficiencia de los procesos de tal modo que hoy ya es posible que los fabricantes, proveedores, distribuidores y clientes intercambien información en línea, favoreciendo con ello la fabricación sobre demanda.
+Por citar algunos ejemplos, permite disminuir los niveles de inventario, obtener mejores condiciones de compra de materiales o diseñar prototipos de los productos a fabricar. (7)
+
+
+Como ejemplos de programas de gestión presentamos los siguientes:
+
+Masterpan® TMComanda es una gestión de toma de pedidos de clientes para restauración.
+
+Es una aplicación diseñada para ser instalada en equipos terminales de mano de tipo Pocket PC, de fácil manejo, para la toma de pedidos por parte de camareros o dependientes.
+
+Masterpan® TMComanda actúa como un complemento al funcionamiento de Masterpan® TPV instalado en un terminal de punto de venta (TPV) del local comercial. Ambas aplicaciones mantienen una comunicación en tiempo real. de manera que la recepción de pedidos en barras o cocina es inmediata.
+
+Con Masterpan® TMComanda podrá realizar las funciones de gestión de mesas: apertura, venta, cobros, facturación... de forma rápida y sencilla. (6)
+
+
+\subsection{Marketing: Empresa Virtual}
+
+El marketing apela a diferentes técnicas y metodologías con la intención de conquistar el mercado.(12)
+Debido a que la competencia ha ido aumentando en el sector de la repostería es necesario conquistar nuevos mercados, una alternativa es la creación de páginas de internet con las cuales se simula el establecimiento propio de la empresa repostera.
+
+Actualmente cualquier negocio que quiera triunfar debe tener su espacio en
+internet, en el caso que nos ocupa además es imperativo ya que va a ser el
+punto de partida del negocio.
+Dicho de otra manera es necesario contar con una plataforma informática integral para negocio online de repostería, una tienda virtual que permita realizar pedidos fácil y rápidamente entre algunos otros objetivos que debe seguir una tienda virtual los cuales se presentan a continuación.
+
+
+. Ampliar la gama de productos para ofrecer a los clientes en la venta virtual de productos de repostería: Pasteles, cupcakes, galletas, postres gourmet, etc.(9)
+
+. Disponer de un catálogo de productos online con el que los clientes puedan saber todos los productos que se comercializan.
+
+
+. Será administrado por uno o varios usuarios que actualizarán el contenido como mínimo una vez por semana, estos usuarios tendrán conocimientos
+técnicos básicos. (8)
+
+
+. El objetivo del eshop es disponer de una tienda virtual online donde se
+puedan comprar todos los productos del catálogo de productos online, los
+clientes deben poder comprar fácilmente los productos ofertados. (8) (from reference \cite{nicolau2012plataforma})
+
+
+. Introducirse en el mercado y dar a conocer la empresa y sus productos con el fin de captar clientes, los trámites necesarios para ejercer la actividad, las obligaciones que ha de cumplir y al tratarse de una empresa meramente online(11)
+
+
+La calidad de los sistemas informáticos se ha convertido hoy en día en uno de los principales objetivos estratégicos de las organizaciones debido a que, cada vez más, los procesos más importantes de la empresas y, por lo tanto, su supervivencia dependen de los sistemas informáticos para su buen funcionamiento. (10)
+
+
+\section{Trabajos Futuros}
+
+
+Con la implementación de la tecnología podríamos extender el mercado abarcado por una empresa, mediante el uso de las tecnologías se pueden dar a conocer los productos, y con un buen plan de marketing los clientes potenciales podrían aumentar y así con el desarrollo de páginas web, nuevas maquinarias, desarrollo de creatividad para el mejoramiento del diseño de los productos y con prácticos software de gestión, se puede crear una empresa moderna y si no se deja de integrar ideas innovadoras al negocio, este estaría en constante crecimiento y la competencia no lo derribaria. 
+
+Se pudiera implementar también nuevos software para que el cliente pudiera diseñar su propio pastel, cupcake o decorar cualquier postre, mediante pantallas táctiles
+También se pudiera desarrollar que los establecimientos dispongan de kioscos interactivos con innovadoras funciones las cuales llamen la atención de nuevos clientes.  
+
+\section{Conclusión}
+Puedo concluir que la implementación de la tecnología en cualquier ámbito es realmente importante para el éxito de la empresa, y al analizar cómo fue la repostería en sus inicios hasta lo que conozco actualmente me doy cuenta de que el implementar ideas procedentes de fuentes exteriores es factible, si las pequeñas o grandes empresas no aprovecharan las innovaciones tecnológicas que se lanzan al mercado, la repostería, por ejemplo, no hubiera llegado jamás a lo que es ahora para mi como para muchas personas la repostería es un arte, ya que agregando creatividad permite crear diversidad de postres implementando distintas técnicas que hacen de su diseño y presentación algo digno de presentar al mercado potencial.
+
+Decidí combinar los temas que me interesan para desarrollar uno solo, y considero que el resultado fue bueno.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+\bibliography{bibfile}
+
+\end{document}
